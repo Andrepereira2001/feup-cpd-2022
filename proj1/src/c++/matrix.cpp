@@ -82,7 +82,7 @@ void OnMult2(int m_ar, int m_br) {
   //change sequence
   for (i = 0; i < m_br; i++)
     for (j = 0; j < m_br; j++)
-      phb[i * m_br + j] = (double)(j + 1);
+      phb[i * m_br + j] = (double)(j + 1); // summing j
 
   Time1 = clock();
 
