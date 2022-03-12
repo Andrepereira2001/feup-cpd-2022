@@ -172,6 +172,7 @@ void OnMultBlock(int m_ar, int m_br, int bkSize) {
   char st[100];
   double temp;
   int i, j, k;
+  int x,y,z; 
 
   double *pha, *phb, *phc;
 
@@ -190,34 +191,18 @@ void OnMultBlock(int m_ar, int m_br, int bkSize) {
 
   Time1 = clock();
 
-  int x,y,z; 
-  int nBlock = 128;
-  //check int and virgulas
-  int N = m_br/nBlock;
 
-  for(x=0; x < N; x++){
-    for(y=0; y < N; y++){
-      for(z=0; z < N; z++){
-
-        for(i=0; i < nBlock; i++){
-          for(j=0; j < nBlock; j++){
-            for(k=0; k < nBlock; k++){
-              phc[i * nBlock + j] += pha[i * nBlock + k] * phb[k * nBlock + j];
+  for(x=0; x < m_br; x+= bkSize){
+    for(z=0; z < m_br; z+= bkSize){
+      for(y=0; y < m_br; y+= bkSize){
+        for(i = x; i < min(x + bkSize, m_ar); i++){
+          for(k = z; k < min(z + bkSize, m_ar); k++){
+            for(j = y; j < min(y + bkSize, m_ar); j++){
+              phc[i * m_ar + j] += pha[i * m_ar + k] * phb[k * m_br + j];
             }
           }
         }
-
       }
-    }
-  }
-
-  for (i = 0; i < m_ar; i++) {
-    for (j = 0; j < m_br; j++) {
-      temp = 0;
-      for (k = 0; k < m_ar; k++) {
-        temp += pha[i * m_ar + k] * phb[k * m_br + j];
-      }
-      phc[i * m_ar + j] = temp;
     }
   }
 
