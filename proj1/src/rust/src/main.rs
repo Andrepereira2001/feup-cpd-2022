@@ -1,14 +1,20 @@
-fn main() {
-    println!("Hello, world!");
+use std::cmp;
+use std::time::Instant;
 
-    on_mult(600,600);
-    on_mult2(600,600);
-    on_mult_line(600,600);
+fn main() {
+    println!("Hello, rust!");
+
+    for x in (600..3001).step_by(400){
+        println!("\n\nStarting {} calculation", x);
+        on_mult(x,x);
+        on_mult2(x,x);
+        on_mult_line(x,x);
+    }
 }
 
 fn on_mult(m_ar: usize, m_br: usize){
-    use std::cmp;
-    use std::time::Instant;
+
+    println!("on_mult Version 1");
 
     let mut pha = vec![0.0f64; m_ar*m_ar];
     for i in 0..m_ar{
@@ -50,8 +56,8 @@ fn on_mult(m_ar: usize, m_br: usize){
 }
 
 fn on_mult2(m_ar: usize, m_br: usize){
-    use std::cmp;
-    use std::time::Instant;
+
+    println!("on_mult Version 2");
 
     let mut pha = vec![0.0f64; m_ar*m_ar];
     for i in 0..m_ar{
@@ -94,8 +100,8 @@ fn on_mult2(m_ar: usize, m_br: usize){
 
 
 fn on_mult_line(m_ar: usize, m_br: usize){
-    use std::cmp;
-    use std::time::Instant;
+
+    println!("on_mult_line");
 
     let mut pha = vec![0.0f64; m_ar*m_ar];
     for i in 0..m_ar{
