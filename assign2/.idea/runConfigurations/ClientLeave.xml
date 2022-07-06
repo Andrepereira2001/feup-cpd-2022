@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ClientLeave" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="org.client.TestClient" />
+    <module name="distributed_store.main" />
+    <option name="PROGRAM_PARAMETERS" value="127.10.10.1:5000 leave " />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

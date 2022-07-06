@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Node3" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="org.node.Node" />
+    <module name="distributed_store.main" />
+    <option name="PROGRAM_PARAMETERS" value="227.10.10.10 8080 127.10.10.1 5002" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

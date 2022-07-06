@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="deleteFile2" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="org.client.TestClient" />
+    <module name="distributed_store.main" />
+    <option name="PROGRAM_PARAMETERS" value="127.10.10.1:5001 delete 04dc59fad483eeccd3dda33543b91fae9ca276e05ce6b1116c7daae856735a16" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

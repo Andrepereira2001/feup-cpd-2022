@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ClientJoin2" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="org.client.TestClient" />
+    <module name="distributed_store.main" />
+    <option name="PROGRAM_PARAMETERS" value="127.10.10.1:5001 join " />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

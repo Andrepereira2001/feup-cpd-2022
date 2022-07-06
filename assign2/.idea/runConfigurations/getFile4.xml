@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="getFile4" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="org.client.TestClient" />
+    <module name="distributed_store.main" />
+    <option name="PROGRAM_PARAMETERS" value="127.10.10.1:5003 get c14b68f66f834df937912bf00c24e45e33cfadd6f81b2bb665730759f30cfaa8" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

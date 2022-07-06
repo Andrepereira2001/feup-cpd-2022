@@ -1,1 +1,0 @@
-g++ -O2 file.cpp -o fileout -lpapi 
