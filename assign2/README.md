@@ -1,5 +1,7 @@
 # Proj. 2: Distributed and Partitioned Key-Value Store
 
+More information related to the projet in [here](./doc/report.pdf).
+
 ## Group:
 - André Pereira - up201905650
 - Margarida Vieria - up201907907
