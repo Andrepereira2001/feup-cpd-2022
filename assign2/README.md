@@ -1,6 +1,6 @@
 # Proj. 2: Distributed and Partitioned Key-Value Store
 
-More information related to the projet in [here](./doc/report.pdf).
+Information related to the projet can be found [here](./doc/report.pdf).
 
 ## Group:
 - André Pereira - up201905650
